@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #FBFBFD;
+}
+
+.nav {
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 98rem;
+        padding: 0 2.2rem;
+        position: relative;
+        
+    }
+
+    &__content {
+        cursor: default;
+        margin: 0 -1rem;
+        width: auto;
+        height: 4.4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        height: 4.4rem;
+        z-index: 1;
+        vertical-align: top;
+    }
+
+    &__link {
+        line-height: 4.4rem;
+        font-weight: 400;
+        color: #f5f5f7;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 0 1rem;
+        height: 4.4rem;
+        opacity: .8;
+        background: no-repeat;
+        text-decoration: none;
+        transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+        &--apple {
+            background-size: 16px 44px;
+            background-repeat: no-repeat;
+            background-image: url(https://www.apple.com/ac/globalnav/6/zh_TW/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg);
+            background-position: center center;
+            width: 16px;
+        }
+
+        &--search {
+            background-size: 18px 88px;
+            background-repeat: no-repeat;
+            background-image: url(https://www.apple.com/ac/globalnav/6/zh_TW/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg);
+            background-position: center center;
+            width: 18px;
+            background-position: 10px 0;
+        }
+
+        &--shopbag {
+            background-size: 17px 44px;
+            background-repeat: no-repeat;
+            background-image: url(https://www.apple.com/ac/globalnav/6/zh_TW/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg);
+            background-position: center center;
+            width: 17px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+
+        &--ch {
+            font-size: 8px;
+        }
+    }
+}
+
+.online-shop-bar {
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    position: relative;
+    top: 44px;
+
+    &__text {
+        text-align: center;
+        margin: auto;
+        padding: 12px;
+        font-weight: 400;
+    }
+
+    &__link {
+        color: #06c;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: -20px;
+    margin-top: 30px;
+
+    &-container {
+        height: 100%;
+
+        &__grid {
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            margin: 0 12px;
+            height: 100rem;
+        }
+    }
+
+    
+    &__text-box {
+        text-align: center;
+        position: relative;
+        z-index: 4;
+
+        &--main {
+            padding-top: 100px;
+        }
+
+        &--sub {
+            padding-top: 20px;
+        }
+
+        &--title {
+            font-size: 58px;
+            font-weight: 600;
+        }
+
+        &--sub-title {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        &--price-box {
+            margin-top: .8rem;
+        }
+
+        &--price-info {
+            font-size: 16px;
+            font-weight: 400;
+            color: #86868b;
+            line-height: 26px;
+        }
+
+        &--links {
+            display: flex;
+            justify-content: space-between;
+            width: 20rem;
+            margin: 1rem auto 0 auto;
+        }
+
+        &--linktext {
+            font-size: 18px;
+            color: #06c;
+            text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+        }
+    }
+
+    &__image-box {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1;
+        overflow: visible;
+        
+    }
+
+    &__image {
+        background-repeat: no-repeat;
+        position: relative;
+        margin: auto;
+        width: 90%;
+        height: 100%;
+
+        &--main {
+            background-size: cover;
+            background-position-y: -6rem;
+        }
+
+        &--sub {
+            background-size: cover;
+            background-position:50% 30%;
+        }
+
+        &--iphone-12 {
+            background-image: url(https://www.apple.com/tw/home/heroes/iphone-12/images/iphone_12_updated__jepm2xpxncuy_mediumtall_2x.jpg);
+        }
+
+        &--iphone-12-pro {
+            background-image: url(https://www.apple.com/v/home/ab/images/heroes/iphone-12-pro/iphone_12_pro_us__e5oyysg4k0ya_mediumtall_2x.jpg);
+        }
+
+        &--ipad-pro {
+            background-image: url(https://www.apple.com/v/home/ab/images/heroes/ipad-pro/hero_ipad_pro_non_avail__fcrsmhs4b7ma_mediumtall_2x.jpg);
+        }
+
+        &--imac {
+            background-image: url(https://www.apple.com/v/home/ab/images/promos/imac/promo_imac__crg641tip4q6_large_2x.jpg);
+        }
+
+        &--watch {
+            background-image: url(https://www.apple.com/tw/home/promos/watch-series-6/images/promo_watch_series_6_lte__f8lrasjnry2y_large_2x.jpg);
+        }
+    }
+}
+
+.hero-dark {
+    background: #000;
+
+    &__text-box--title {
+        color: white;
+    }
+
+    &__text-box--sub-title {
+        color: white;
+    }
+}
